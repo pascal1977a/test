@@ -1,14 +1,1 @@
-[
-  {
-    "name": "spark",
-    "path": "/Tables",
-    "target": {
-      "type": "OneLake",
-      "oneLake": {
-        "path": "Tables/spark",
-        "itemId": "7819f015-df5f-4495-b04c-505cf0848a9b",
-        "workspaceId": "2eecf698-32a0-4d5b-89dd-2393e85c7dac"
-      }
-    }
-  }
-]
+[]
