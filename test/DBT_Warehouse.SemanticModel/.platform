@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "DBT_Warehouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e7993435-bc5e-9d39-40b7-87a6a184f1fa"
+  }
+}
