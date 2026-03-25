@@ -1,0 +1,77 @@
+table payments
+	lineageTag: f82871e8-93ec-4877-9800-8b49562b5c6a
+	sourceLineageTag: [dbo].[payments]
+
+	column ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 26237a43-4de0-4b45-b806-979895b3f6a2
+		sourceLineageTag: ID
+		summarizeBy: sum
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ORDERID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f5be9fff-3f5a-47cb-9d5e-853ba1b0a2a9
+		sourceLineageTag: ORDERID
+		summarizeBy: sum
+		sourceColumn: ORDERID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAYMENTMETHOD
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 155e84d8-50d4-47fd-8081-f4e2eb5b8df4
+		sourceLineageTag: PAYMENTMETHOD
+		summarizeBy: none
+		sourceColumn: PAYMENTMETHOD
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4483dec6-e107-4fe5-9592-7929b4f15d0c
+		sourceLineageTag: STATUS
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column AMOUNT
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1c7e4a8d-15f0-4b03-92dc-0f18e986d35a
+		sourceLineageTag: AMOUNT
+		summarizeBy: sum
+		sourceColumn: AMOUNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CREATED
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 4a1eda0b-f729-4386-9244-93e9435de815
+		sourceLineageTag: CREATED
+		summarizeBy: none
+		sourceColumn: CREATED
+
+		annotation SummarizationSetBy = Automatic
+
+	partition payments-d1b8940f-b02a-44c4-abbe-3810b58c7618 = entity
+		mode: directLake
+		source
+			entityName: payments
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

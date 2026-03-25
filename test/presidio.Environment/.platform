@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Environment",
+    "displayName": "presidio",
+    "description": "Environment"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0c9f8bec-84d7-897e-4b44-e10334619429"
+  }
+}

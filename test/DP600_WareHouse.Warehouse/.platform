@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "DP600_WareHouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "df2476a7-007d-ad3c-4f04-ef59a9d9f683"
+  }
+}
