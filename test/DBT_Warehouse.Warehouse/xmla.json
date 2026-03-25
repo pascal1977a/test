@@ -874,6 +874,219 @@
             "value": "False"
           }
         ]
+      },
+      {
+        "name": "table1",
+        "sourceLineageTag": "[dbo].[table1]",
+        "columns": [
+          {
+            "name": "col1",
+            "dataType": "int64",
+            "sourceColumn": "col1",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col1",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "col2",
+            "dataType": "int64",
+            "sourceColumn": "col2",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col2",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "col3",
+            "dataType": "int64",
+            "sourceColumn": "col3",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col3",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "col4",
+            "dataType": "int64",
+            "sourceColumn": "col4",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col4",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "col5",
+            "dataType": "int64",
+            "sourceColumn": "col5",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col5",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "col6",
+            "dataType": "int64",
+            "sourceColumn": "col6",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col6",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "col7",
+            "dataType": "int64",
+            "sourceColumn": "col7",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col7",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "col8",
+            "dataType": "int64",
+            "sourceColumn": "col8",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "col8",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "table1",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "view1",
+        "sourceLineageTag": "[dbo].[view1]",
+        "columns": [
+          {
+            "name": "t1",
+            "dataType": "int64",
+            "sourceColumn": "t1",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "t1",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "t2",
+            "dataType": "int64",
+            "sourceColumn": "t2",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "t2",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "t4",
+            "dataType": "int64",
+            "sourceColumn": "t4",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "t4",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "view1",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
       }
     ],
     "expressions": [
